@@ -128,7 +128,6 @@ const add = (url: string, filename: string, cb: (model: Group) => void) => {
   d3models[filename] = { materials: [] }
 
   const urlFilename = url + filename + '.glb'
-  console.log(urlFilename)
 
   loader.load(
     urlFilename,
