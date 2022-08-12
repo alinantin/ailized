@@ -67,26 +67,31 @@
 <div id="pitch" class="key"><span><Icon name="Presentation" />Pitch</span></div>
 <div class="brake" />
 
+<!-- new line -->
 {#each content.split(/\r?\n/) as text, i}
+    <!-- trim -->
     {#if text.trim()}
         <div class="key" data-pitch={i} on:click={() => ($pitch = i)}>
+            <!-- the first -->
             {#if !i}<FirstLastChild id="pitch" is="first" />{/if}
+            <!-- bookmarked -->
             {#if $pitch === i}
                 <span class="bookmark"><Icon name="Bookmark" /></span>
             {/if}
             <span class="text">
-                {#each text.split(/(\[.*\]\(http.*\))/g) as item, i}
+                <!-- link -->
+                {#each text.split(/(\[.*?\]\(.*?\))/g) as item, i}
+                    <!-- every each link found -->
                     {#if i % 2 === 1}
                         {#if (pieces = item.split(/\[(.*)\]\((.*)\)/))}
                             <a class="link" href={pieces[2]}
                                 >{pieces[1] || pieces[2]}</a
-                            >
-                        {/if}
-                    {:else}
-                        <span>{item}</span>
+                            >{/if}<!-- string -->
+                    {:else}<span>{item}</span>
                     {/if}
                 {/each}
             </span>
+            <!-- the last -->
             {#if content.length === i + 1}<FirstLastChild
                     id="pitch"
                     is="last"
