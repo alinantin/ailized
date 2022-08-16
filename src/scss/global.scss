@@ -101,6 +101,9 @@ canvas {
   .ico {
     height: 1rem;
     width: 1rem;
+  }
+
+  :not(.text) .ico {
     margin-right: .25rem;
   }
 

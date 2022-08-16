@@ -61,6 +61,18 @@
         };
     $: d3A?.update("./media/", wordA);
     d3.subscribe((d3) => (d3A = d3));
+
+    const regFound = (i: number) => i % 2 === 1;
+
+    const reg3D = (str: string) => str.split(/(<!--.*?-->)/g),
+        reg3DObj = (str: string) => str.match(/\<!--3d(.*)-->/)[1] || "";
+
+    const regLink = (str: string) => str.split(/(\[.*?\]\(.*?\))/g),
+        regLinkTitle = (str: string) => str.match(/\[(.*)\]/)[1] || "",
+        regLinkHref = (str: string) => str.match(/\((.*)\)/)[1] || "";
+
+    const regBoldItalic = (str: string) => str.split(/(\*\*\*.*?\*\*\*)/g),
+        regBoldItalicText = (str: string) => str.match(/\*\*\*(.*)\*\*\*/)[1];
 </script>
 
 <div class="brake" />
@@ -79,15 +91,25 @@
                 <span class="bookmark"><Icon name="Bookmark" /></span>
             {/if}
             <span class="text">
-                <!-- link -->
-                {#each text.split(/(\[.*?\]\(.*?\))/g) as item, i}
-                    <!-- every each link found -->
-                    {#if i % 2 === 1}
-                        {#if (pieces = item.split(/\[(.*)\]\((.*)\)/))}
-                            <a class="link" href={pieces[2]}
-                                >{pieces[1] || pieces[2]}</a
-                            >{/if}<!-- string -->
-                    {:else}<span>{item}</span>
+                {#each regLink(text) as text1, i}
+                    {#if regFound(i)}
+                        <a href={regLinkHref(text1)}
+                            >{regLinkTitle(text1) || regLinkHref(text1)}</a
+                        >
+                    {:else}
+                        {#each regBoldItalic(text1) as text2, i}
+                            {#if regFound(i)}
+                                <b><i>{regBoldItalicText(text2)}</i></b>
+                            {:else}
+                                {#each reg3D(text2) as text3, i}
+                                    {#if regFound(i)}
+                                        <Icon name="D3" /><span
+                                            data-d3={reg3DObj(text3)}
+                                        />{:else}{text3}
+                                    {/if}
+                                {/each}
+                            {/if}
+                        {/each}
                     {/if}
                 {/each}
             </span>

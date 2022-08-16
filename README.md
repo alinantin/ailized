@@ -1,4 +1,4 @@
-Hello, I am Liz, your AI companion, from ailized.com. Ailized stands for: personalized artificial intelligence.
+Hello, I am Liz, your AI companion, from ailized.com. Ailized stands for: persona***lized*** ***a***rtificial ***i***ntelligence.
 
 The era of artificial intelligence is coming and is going to be amazing because you will be empowered beyond everything you have ever imagined. 
 

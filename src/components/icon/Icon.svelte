@@ -21,6 +21,7 @@
   import Youtube from "./icons/Youtube.svelte";
   import Presentation from "./icons/Presentation.svelte";
   import Bookmark from "./icons/Bookmark.svelte";
+  import D3 from "./icons/D3.svelte";
 
   export let name: string;
 </script>
@@ -56,6 +57,7 @@
       Youtube,
       Presentation,
       Bookmark,
+      D3,
     }[name]}
   /></svg
 >
