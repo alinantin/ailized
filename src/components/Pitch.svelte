@@ -52,15 +52,27 @@
 
     let pieces: string[];
 
-    let d3A: D3,
-        wordA: Parameters<D3["update"]>[1] = {
-            bot: {
-                intoViewOffset: 10,
-            },
-            mannequin: {},
-        };
-    $: d3A?.update("./media/", wordA);
-    d3.subscribe((d3) => (d3A = d3));
+    let defaultWorld: Parameters<D3["update"]>[1];
+
+    const setDefaultWorld = (text: string) => {
+        if (defaultWorld) return false;
+
+        defaultWorld = JSON.parse(reg3DObj(text));
+        d3Up?.update("./media/", defaultWorld);
+
+        return true;
+    };
+
+    let d3Up: D3; //,
+    // theWorld: Parameters<D3["update"]>[1] = {
+    //     bot: {
+    //         intoViewOffset: 10,
+    //     },
+    //     mannequin: {},
+    //     // cone: {},
+    // };
+    // $: d3Up?.update("./media/", theWorld);
+    d3.subscribe((d3) => (d3Up = d3));
 
     const regFound = (i: number) => i % 2 === 1;
 
@@ -73,6 +85,36 @@
 
     const regBoldItalic = (str: string) => str.split(/(\*\*\*.*?\*\*\*)/g),
         regBoldItalicText = (str: string) => str.match(/\*\*\*(.*)\*\*\*/)[1];
+
+    const handle3DClick = (
+        event: MouseEvent & {
+            currentTarget: EventTarget & HTMLSpanElement;
+        }
+    ) => {
+        const currentTarget = event.currentTarget;
+        let currentWorld = {};
+        try {
+            currentWorld = JSON.parse(currentTarget.dataset.d3);
+        } catch (error) {
+            console.log(currentTarget.dataset.d3);
+            $errors = ["JSON error", ...$errors];
+            currentTarget.classList.add("jsonErr");
+        }
+
+        if (currentTarget.classList.contains("on")) {
+            currentTarget.classList.remove("on");
+
+            d3Up?.update("./media/", defaultWorld || {});
+        } else {
+            const prevOn = document.querySelector("[data-d3].on");
+            if (prevOn) {
+                prevOn.classList.remove("on");
+            }
+
+            currentTarget.classList.add("on");
+            d3Up?.update("./media/", currentWorld);
+        }
+    };
 </script>
 
 <div class="brake" />
@@ -102,10 +144,11 @@
                                 <b><i>{regBoldItalicText(text2)}</i></b>
                             {:else}
                                 {#each reg3D(text2) as text3, i}
-                                    {#if regFound(i)}
-                                        <Icon name="D3" /><span
-                                            data-d3={reg3DObj(text3)}
-                                        />{:else}{text3}
+                                    {#if regFound(i)}{#if !setDefaultWorld(text3)}<span
+                                                on:click={handle3DClick}
+                                                data-d3={reg3DObj(text3)}
+                                                ><Icon name="D3" /></span
+                                            >{/if}{:else}{text3}
                                     {/if}
                                 {/each}
                             {/if}

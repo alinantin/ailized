@@ -45,19 +45,25 @@ canvas {
   border-radius: .5rem;
   width: fit-content;
 
-  &.error>:first-child~* {
+  &.error {
 
-    >.close {
-      font-weight: bold;
-      cursor: pointer;
+    >:first-child~* {
 
-      opacity: .85;
-      transition: opacity .15s;
+      >.close {
+        font-weight: bold;
+        cursor: pointer;
 
-      &:hover {
-        opacity: 1;
+        opacity: .85;
+        transition: opacity .15s;
+
+        &:hover {
+          opacity: 1;
+        }
       }
     }
+
+    position: fixed;
+    z-index: 100;
   }
 
   >[data-edge] {
@@ -101,10 +107,17 @@ canvas {
   .ico {
     height: 1rem;
     width: 1rem;
+    margin-right: .25rem;
   }
 
-  :not(.text) .ico {
-    margin-right: .25rem;
+  [data-d3] {
+    &.on {
+      opacity: .5;
+    }
+
+    .ico {
+      margin-right: 0;
+    }
   }
 
   label {

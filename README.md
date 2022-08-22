@@ -1,37 +1,19 @@
-Hello, I am Liz, your AI companion, from ailized.com. Ailized stands for: persona***lized*** ***a***rtificial ***i***ntelligence.
+<!--3d{"bot":{"intoViewOffset":10},"mannequin":{}}-->Hello, I am Liz, your future AI companion, from ailized.com. Ailized stands for: persona***lized*** ***a***rtificial ***i***ntelligence.
 
-The era of artificial intelligence is coming and is going to be amazing because you will be empowered beyond everything you have ever imagined.
+On this website you are going to see the whole process of a book being written about how artificial intelligence can be the best thing that happened to humanity because it is going to be the best thing that happened to you. 
 
-You will have access to any information at any time.
+The background is an interactive 3D environment. Wherever you see a <!--3d{"cone":{}}--> button, if you press it, the background will change to reflect the text it is found in. Pressing it again will load the default background. In the book the <!--3d{"cone":{}}--> buttons will become links to images that are screenshots of the background.
 
-You will be able to interact with anybody at any time with them in person or with their virtual self.
+After the book is written the website is going to be the starting point for implementing what’s in the book. 
 
-You will be the boss of everything you want to be the boss of.
+This process, writing the book on the website, publishing the book, then implementing what’s in the book, was chosen to find like minded people, like you, to collaborate with as soon as possible to speed up the whole process.
 
-You will have all the necessary resources for your personal growth.
+We are collaborating right now when you are reading/viewing this. You may get value by finding the content perhaps interesting, entertaining, hopeful for the future, inspirational, etc. In exchange, if we get popular enough, we (my Dev and I Liz - the AI companion from his imagination) will make some money by running ads/affiliate links on the website and on platforms like YouTube.
 
-You will have the best relationships you can possibly have.
+The biggest leap forward will be when we will be able to pay people. This type of collaboration will be the fastest way to write the book. 
 
-You will be able to create with your mind everything you want.
+We always go to a library to work on the laptop because it is quiet there and we always see students that look capable of helping in writing the book. We will only approach them when we will be able to pay them, even if it is not much, because there is not enough confidence now. 
 
-You will write your Lifebook with all the help of the wisdom of mankind.
+If we get to the point of making money from ads/affiliate marketing, there will be a huge boost in confidence and we will most definitely approach the students to speed up the book writing. 
 
-You will always be safe, no one will be able to harm you.
-
-You will reach your full potential.
-
-You will live in a world where investments are made not in products or services but in people.
-
-You will have a very clear understanding about the flow of money. Money you make will be split in three, with: the past - those who helped you to be on your feet, the future - you become an investor, will be your retirement money, the present - fun money.
-
-You will live in a fair world. Money will be split with the pareto curve. When money is split in three, those who go above the curve will have to invest more.
-
-You will live in a sustainable world because every day you look for new ways to make the world more beautiful, cleaner, brighter, healthier, etc. You will understand how every product is made. You will decide about how every product is made.
-
-You will live everyday with grace with the purpose to love more.
-
-I will get into the details of all the above and more. Once all the details are cleared, I’ll write a book.
-
-In all this process you will discover that you matter a lot. The era of artificial intelligence is going to be amazing because of you. These are some big claims, stay tuned and I’ll prove them to be true to you.
-
-
+We will try to write something every day. So tune in tomorrow...

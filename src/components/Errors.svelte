@@ -3,14 +3,10 @@
 
   import { errors } from "../store";
   import Icon from "./icon/Icon.svelte";
-
-  let el: HTMLElement;
-
-  afterUpdate(() => el?.scrollIntoView(false));
 </script>
 
 {#if $errors.length}
-  <div bind:this={el} class="key error">
+  <div class="key error">
     <span><Icon name="Warning" />Error</span>
     {#each $errors as error}
       <span

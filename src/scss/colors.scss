@@ -12,9 +12,33 @@ body {
 .key {
   background: rgba($light, .7);
 
+  &.error {
+    background: $light;
+    border-color: #b91c1c;
+
+    .close {
+      color: #a16207;
+
+      &:hover {
+        color: #c2410c;
+      }
+    }
+
+    path {
+      stroke: #b91c1c;
+    }
+  }
+
   [type="radio"]+span::after {
     background: $dark;
   }
+
+  [data-d3] {
+    &.jsonErr path {
+      stroke: #dc2626;
+    }
+  }
+
 
   /* border-color: rgba($dark, .75);
   transition: border-color .15s;
@@ -34,6 +58,10 @@ html.dark {
 
   .key {
     background: rgba($dark, .7);
+
+    &.error {
+      background: $dark;
+    }
 
     [type="radio"]+span::after {
       background: $light;
