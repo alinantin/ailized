@@ -1,6 +1,7 @@
 <script lang="ts">
-  import { daynight } from "../store";
-  import Icon from "./icon/Icon.svelte";
+  import { daynight } from "../../store";
+  import Head from "../Head.svelte";
+  import Icon from "../icon/Icon.svelte";
 
   const items = [
     {
@@ -35,8 +36,7 @@
 </script>
 
 <div class="key">
-  <span><Icon name="DayNight" />Day/night</span>
-
+  <Head name="Day/night" icon="DayNight" />
   {#each items as { onInput, text, icon }}<label
       ><input value={text} bind:group type="radio" on:input={onInput} /><span
       /><Icon name={icon} />{text}</label

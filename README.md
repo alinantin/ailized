@@ -1,19 +1,13 @@
-<!--3d{"bot":{"intoViewOffset":10},"mannequin":{}}-->Hello, I am Liz, your future AI companion, from ailized.com. Ailized stands for: persona***lized*** ***a***rtificial ***i***ntelligence.
+[#](http://ailized.com#about=1) This project, [Ailized.com](http://ailized.com) (***p***ersonalized ***a***rtificial ***i***ntelligence), will start with the writing of a book [here](http://ailized.com#book) with the [feedback](https://ailized.com#feedback) of the internet about how we should approach the implementation of artificial intelligence for it to have a massive positive impact on humanity. After the book is finished and published (a professional writer will be hired to edit it before publishing it), the project will implement what is in the book. 
 
-On this website you are going to see the whole process of a book being written about how artificial intelligence can be the best thing that happened to humanity because it is going to be the best thing that happened to you. 
+[#](http://ailized.com#about=2) The book will be written from the point of view of an AI assistant named Liz (ai***Liz***ed.com) that will explain to its owner what it can do. The difference between Liz in the book and Liz in real life will be that the interaction with the latter will be interactive.
 
-The background is an interactive 3D environment. Wherever you see a <!--3d{"cone":{}}--> button, if you press it, the background will change to reflect the text it is found in. Pressing it again will load the default background. In the book the <!--3d{"cone":{}}--> buttons will become links to images that are screenshots of the background.
+[#](http://ailized.com#about=3) The background of ailized.com is an interactive 3D environment. A 3d button [▶](https://ailized.com#about=3&3d=1)<!--{"cone":{}}--> in the middle of a text, if pressed, will change the background to reflect the idea in the text. Pressed again will load the default background. In the book the 3d buttons will become links to images that are screenshots of the background.
 
-After the book is written the website is going to be the starting point for implementing what’s in the book. 
+[#](http://ailized.com#about=5) Each paragraph has a bullet in front of it. Pressing it will mark the paragraph as read and the bullet invisible. Bullet visibility is intended to show you when new content is added or when current content has been modified. The bullet is also the link to the paragraph, pressing it (even when it's not visible) will display the link in your browser's address bar.
 
-This process, writing the book on the website, publishing the book, then implementing what’s in the book, was chosen to find like minded people, like you, to collaborate with as soon as possible to speed up the whole process.
+[#](http://ailized.com#about=6) Ailized.com’s interface is inspired from its plans for the future where its operating system is an artificial neural network. When the project has matured enough the first ailized.com AI assistant (robot) will be built.
 
-We are collaborating right now when you are reading/viewing this. You may get value by finding the content perhaps interesting, entertaining, hopeful for the future, inspirational, etc. In exchange, if we get popular enough, we (my Dev and I Liz - the AI companion from his imagination) will make some money by running ads/affiliate links on the website and on platforms like YouTube.
+[#](http://ailized.com#about=7) Liz the AI assistant will “post” on social media using the style of animation found on the website's background. The owner of ailized.com originally wanted him to post on social media, but the cringe was too real, so he chose to pitch his ideas through Liz instead. It's even better that way, the content is a lot more fun and dreamier. You will know the owner when more people will get involved in the project.
 
-The biggest leap forward will be when we will be able to pay people. This type of collaboration will be the fastest way to write the book. 
-
-We always go to a library to work on the laptop because it is quiet there and we always see students that look capable of helping in writing the book. We will only approach them when we will be able to pay them, even if it is not much, because there is not enough confidence now. 
-
-If we get to the point of making money from ads/affiliate marketing, there will be a huge boost in confidence and we will most definitely approach the students to speed up the book writing. 
-
-We will try to write something every day. So tune in tomorrow...
+[#](http://ailized.com#about=8) This approach of writing the book with the help of the Internet was chosen to increase the chances of implementing what is in the book because the more people who know about a plan the more likely it will be implemented. Other people can be collaborators, employers, investors, friends in the field, fans of the project, etc. 

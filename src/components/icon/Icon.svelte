@@ -22,6 +22,11 @@
   import Presentation from "./icons/Presentation.svelte";
   import Bookmark from "./icons/Bookmark.svelte";
   import D3 from "./icons/D3.svelte";
+  import Book from "./icons/Book.svelte";
+  import About from "./icons/About.svelte";
+  import Idea from "./icons/Idea.svelte";
+  import InfoCircle from "./icons/InfoCircle.svelte";
+  import InfoTriangle from "./icons/InfoTriangle.svelte";
 
   export let name: string;
 </script>
@@ -58,6 +63,11 @@
       Presentation,
       Bookmark,
       D3,
+      Book,
+      About,
+      Idea,
+      InfoCircle,
+      InfoTriangle,
     }[name]}
   /></svg
 >

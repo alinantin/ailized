@@ -1,7 +1,8 @@
 <script lang="ts">
-  import { errors } from "../store";
+  import { messages } from "../../store";
+  import Head from "../Head.svelte";
 
-  import Icon from "./icon/Icon.svelte";
+  import Icon from "../icon/Icon.svelte";
 
   const w = window as any;
   const SpeechRecognition = w.SpeechRecognition || w.webkitSpeechRecognition;
@@ -40,7 +41,7 @@
   recognition.addEventListener("error", (event) => {
     stop();
     group = "off";
-    $errors = [JSON.stringify(event.error), ...$errors];
+    messages.set([JSON.stringify(event.error), "e"]);
   });
 
   const start = () => {
@@ -77,7 +78,8 @@
 </script>
 
 <div class="key">
-  <span><Icon name="Ear" />Listen</span><label class="radio"
+  <Head name="Listen" icon="Ear" />
+  <label class="radio"
     ><input
       on:input={stop}
       bind:group

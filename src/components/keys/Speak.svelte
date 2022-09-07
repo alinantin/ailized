@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { errors, pitch } from "../store";
+  import { messages, pitch } from "../../store";
   import TWEEN from "@tweenjs/tween.js";
-  import { d3models } from "../3d";
-  import Icon from "./icon/Icon.svelte";
+  import { d3models } from "../../3d";
+  import Head from "../Head.svelte";
 
   const synth = window.speechSynthesis;
 
@@ -163,7 +163,7 @@
 
     utterThis.onerror = (event) => {
       document.body.classList.remove("loading");
-      $errors = [JSON.stringify(event.error), ...$errors];
+      messages.set([JSON.stringify(event.error), "e"]);
       group = "off";
     };
 
@@ -184,7 +184,8 @@
 </script>
 
 <div class="key">
-  <span><Icon name="Mouth" />Speak</span><label
+  <Head name="Speak" icon="Mouth" />
+  <label
     ><input type="radio" bind:group value="off" on:input={off} /><span
     />off</label
   ><label

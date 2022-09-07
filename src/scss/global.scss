@@ -15,10 +15,10 @@ html {
 }
 
 body {
-  min-height: calc(100vh - .15rem);
-  padding: .0525rem;
   margin: 0;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Special Elite';
+  padding: .0525rem;
+  height: calc(100vh - .15rem);
 }
 
 a {
@@ -45,21 +45,34 @@ canvas {
   border-radius: .5rem;
   width: fit-content;
 
+  .id.read {
+    opacity: 0;
+  }
+
+  a.id {
+    text-decoration: none;
+  }
+
   &.error {
+    box-shadow: 10px 10px 20px rgb(0 0 0 / 50%);
 
-    >:first-child~* {
+    border-width: 2px;
+    border-style: dashed;
 
-      >.close {
-        font-weight: bold;
-        cursor: pointer;
+    .close {
+      position: relative;
+      top: .125rem;
 
-        opacity: .85;
-        transition: opacity .15s;
+      font-weight: bold;
+      cursor: pointer;
 
-        &:hover {
-          opacity: 1;
-        }
+      opacity: .85;
+      transition: opacity .15s;
+
+      &:hover {
+        opacity: 1;
       }
+
     }
 
     position: fixed;
@@ -104,10 +117,24 @@ canvas {
 
   }
 
+  .text {
+    line-height: 1.1;
+
+    .ico {
+      margin-top: -.3em;
+    }
+  }
+
   .ico {
     height: 1rem;
     width: 1rem;
     margin-right: .25rem;
+    flex-shrink: 0;
+  }
+
+  .head .ico {
+    position: relative;
+    bottom: .125rem;
   }
 
   [data-d3] {

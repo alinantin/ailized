@@ -14,30 +14,31 @@ body {
 
   &.error {
     background: $light;
-    border-color: #b91c1c;
+    // border-color: #b91c1c;
 
     .close {
-      color: #a16207;
+      // color: #a16207;
 
       &:hover {
-        color: #c2410c;
+        // color: #c2410c;
+        font-weight: bold;
       }
     }
 
-    path {
+    /* path {
       stroke: #b91c1c;
-    }
+    } */
   }
 
   [type="radio"]+span::after {
     background: $dark;
   }
 
-  [data-d3] {
+  /* [data-d3] {
     &.jsonErr path {
       stroke: #dc2626;
     }
-  }
+  } */
 
 
   /* border-color: rgba($dark, .75);

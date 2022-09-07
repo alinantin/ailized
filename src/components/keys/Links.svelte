@@ -1,5 +1,7 @@
 <script lang="ts">
-    import Icon from "./icon/Icon.svelte";
+    import Head from "../Head.svelte";
+
+    import Icon from "../icon/Icon.svelte";
 
     const links = [
         {
@@ -18,8 +20,8 @@
 </script>
 
 <div class="key">
-    <span><Icon name="Link" />Links</span
-    >{#each links as { icon, text, link }}<span
+    <Head name="Links" />
+    {#each links as { icon, text, link }}<span
             ><Icon name={icon} /><a class="link" href={link}>{text}</a></span
         >{/each}
 </div>

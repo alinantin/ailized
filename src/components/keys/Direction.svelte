@@ -1,6 +1,6 @@
 <script lang="ts">
   import FirstLastChild from "../FirstLastChild.svelte";
-  import Icon from "../icon/Icon.svelte";
+  import Head from "../Head.svelte";
 
   const values: ["horizontal", "vertical"] = ["horizontal", "vertical"];
 
@@ -13,7 +13,7 @@
 
 <div class="key">
   <FirstLastChild id="keys" is="first" />
-  <span><Icon name="Direction" />Direction</span>
+  <Head name="Direction" />
   {#each values as value}
     <label><input type="radio" bind:group {value} /><span />{value}</label>
   {/each}

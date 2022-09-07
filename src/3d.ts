@@ -1,7 +1,7 @@
 import { Scene, PerspectiveCamera, WebGLRenderer, AnimationMixer, Clock, Color, Material, Group, Box3, Vector3, } from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-import { errors, daynight, } from './store'
+import { messages, daynight, } from './store'
 import TWEEN from '@tweenjs/tween.js'
 
 const
@@ -123,11 +123,11 @@ function fitCameraToObject(object: Group, offset = 1.5) {
 
 // add
 
-const add = (url: string, filename: string, cb: (model: Group) => void) => {
+const add = (filename: string, cb: (model: Group) => void) => {
 
   d3models[filename] = { materials: [] }
 
-  const urlFilename = url + filename + '.glb'
+  const urlFilename = './media/' + filename + '.glb'
 
   loader.load(
     urlFilename,
@@ -162,7 +162,7 @@ const add = (url: string, filename: string, cb: (model: Group) => void) => {
       // console.log((Math.round(xhr.loaded / xhr.total) * 100) + '%')
     },
 
-    error => errors.update(items => [filename + ': ' + JSON.stringify(error), ...items]),
+    error => messages.set([filename + ': ' + JSON.stringify(error), 'e']),
 
   )
 
@@ -203,7 +203,7 @@ export default class D3 {
 
   }
 
-  update(url: string, world: { [_: string]: { intoViewOffset?: number } } = {}) {
+  update(world: { [_: string]: { intoViewOffset?: number } } = {}) {
 
     for (const key in d3models) {
       if (!world[key]) remove(key)
@@ -213,7 +213,7 @@ export default class D3 {
 
       if (!d3models[key]) {
 
-        add(url, key, model => {
+        add(key, model => {
           if (world[key].intoViewOffset) fitCameraToObject(model, world[key].intoViewOffset)
         })
 
