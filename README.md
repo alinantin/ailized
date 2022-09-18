@@ -28,9 +28,4 @@ On idle the bots will stay together into the shape of a blob, called a blobot, w
 
 Each bot will have its own brain that will sync with the bots around to complete a task you gave them. You and the bots will function like an octopus where you have the main brain and the bots with their brains are the limbs with their brains.
 
-To be continued... 
-
-
-
-
-
+To be continued...
