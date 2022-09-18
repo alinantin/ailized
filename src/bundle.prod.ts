@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
       wb.messageSW({ type: 'SKIP_WAITING' })
 
       const closeLink = document.createElement('a')
-      closeLink.setAttribute('style', 'font-size:larger;text-decoration:none;font-weight:bolder;line-height:0.5;vertical-align:bottom')
+      closeLink.setAttribute('style', 'font-size:larger;text-decoration:none;font-weight:bolder;line-height:0.5;vertical-align:middle')
       closeLink.href = 'javascript:void(0)'
       closeLink.append('×')
       closeLink.onclick = () => container.remove()
