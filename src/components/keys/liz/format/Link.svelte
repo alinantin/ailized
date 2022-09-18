@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { iIsOdd } from "../../../fun";
+  import { iIsOdd } from "../../../../fun";
 
   const regSplit = (str: string) => str.split(/(\[.*?\]\(.*?\))/g),
     regMatchTitle = (str: string) => str.match(/\[(.*)\]/)[1],

@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { messages, hash } from "../../store";
-  import Head from "../Head.svelte";
+  import { messages, hash } from "../../../store";
+  import Head from "../../Head.svelte";
   import BoldAndItalic from "./format/BoldAndItalic.svelte";
   import D3 from "./format/D3.svelte";
   import Id from "./format/Id.svelte";
@@ -16,15 +16,18 @@
         return response.text();
       })
       .then((text1) => (text = text1))
-      .catch((error) => messages.set(["Pitch " + error, "e"]))
+      .catch((error) => messages.set(["Liz " + error, "e"]))
       .finally(() => document.body.classList.remove("loading"));
   };
 
-  export let id: "About" | "Book";
-  const idLC = id.toLowerCase();
+  const id = "Liz";
+  const idLC = "liz";
 
-  let view: boolean;
-  export let url: string;
+  const url =
+    localStorage.url ||
+    "https://raw.githubusercontent.com/alinantin/ailized/main/README.md";
+
+  let view = true;
 
   hash.live.subscribe((map) => (view = map.has(idLC)));
 
@@ -61,7 +64,7 @@
 {/if}
 <div class="key">
   <Head name={id}
-    ><label
+    ><!-- <label
       ><input
         on:change={(event) => {
           if (event.currentTarget.checked) return hash.set([idLC]);
@@ -70,7 +73,7 @@
         type="checkbox"
         bind:checked={view}
       /><span /><span>{id}</span></label
-    ></Head
+    > -->{id}</Head
   >
 </div>
 {#if view}
@@ -84,5 +87,4 @@
       </BoldAndItalic>
     </Id>
   </Paragraph>
-  <div class="brake" />
 {/if}

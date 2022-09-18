@@ -40,7 +40,7 @@ export const hash = new class {
 
   constructor() {
     window.onpopstate = () => this.live.set(this.hashToMap());
-    this.defaultOpen()
+    // this.defaultOpen()
     this.live = writable<Map<string, string>>(this.hashToMap())
   }
 
@@ -78,12 +78,12 @@ export const hash = new class {
     )
   }
 
-  private defaultOpen = () => {
+  /* private defaultOpen = () => {
     this.mapToHash(new Map(
       ([['about', true], ['book', false]] as [string, boolean][])
         .filter(item => JSON.parse(localStorage.getItem(item[0] + "_view") || '' + item[1]) === true)
         .map(item => [item[0], ''])
     ))
-  }
+  } */
 
 }

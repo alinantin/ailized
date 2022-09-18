@@ -27,6 +27,7 @@
   import Idea from "./icons/Idea.svelte";
   import InfoCircle from "./icons/InfoCircle.svelte";
   import InfoTriangle from "./icons/InfoTriangle.svelte";
+  import Liz from "./icons/Liz.svelte";
 
   export let name: string;
 </script>
@@ -38,6 +39,7 @@
   viewBox="0 0 48 48"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
+  id={"i" + name}
   ><svelte:component
     this={{
       Warning,
@@ -68,6 +70,7 @@
       Idea,
       InfoCircle,
       InfoTriangle,
+      Liz,
     }[name]}
   /></svg
 >

@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { iIsOdd, idFromUrlVar } from "../../../fun";
-  import { hash } from "../../../store";
+  import { iIsOdd, idFromUrlVar } from "../../../../fun";
+  import { hash } from "../../../../store";
 
   const regSplit = (str: string) => str.split(/^(\[#\]\(.*?\))/g),
     // regMatchTitle = (str: string) => str.match(/\[(.*)\]/)[1],
@@ -8,7 +8,7 @@
 
   export let text: string;
 
-  export let id: "About" | "Book";
+  export let id: string;
 
   const idLC = id.toLowerCase();
 </script>

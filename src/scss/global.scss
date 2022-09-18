@@ -19,6 +19,12 @@ body {
   font-family: 'Special Elite';
   padding: .0525rem;
   height: calc(100vh - .15rem);
+
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: .15rem;
+  }
 }
 
 a {

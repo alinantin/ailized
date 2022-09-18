@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { iIsOdd } from "../../../fun";
+  import { iIsOdd } from "../../../../fun";
 
   const regBoldItalic = (str: string) => str.split(/(\*\*\*.*?\*\*\*)/g),
     regBoldItalicText = (str: string) => str.match(/\*\*\*(.*)\*\*\*/)[1];

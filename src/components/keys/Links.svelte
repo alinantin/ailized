@@ -20,7 +20,7 @@
 </script>
 
 <div class="key">
-    <Head name="Links" />
+    <Head name="Links" icon="Link" />
     {#each links as { icon, text, link }}<span
             ><Icon name={icon} /><a class="link" href={link}>{text}</a></span
         >{/each}

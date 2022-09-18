@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { d3, messages, default3DWorld, hash } from "../../../store";
-  import { iIsOdd, idFromUrlVar } from "../../../fun";
-  import Icon from "../../icon/Icon.svelte";
+  import { d3, messages, default3DWorld, hash } from "../../../../store";
+  import { iIsOdd, idFromUrlVar } from "../../../../fun";
+  import Icon from "../../../icon/Icon.svelte";
   const hashLive = hash.live;
 
   const reg3D = (str: string) => str.split(/(\[▶\].*?-->)/g),
@@ -41,7 +41,7 @@
     }
   };
 
-  export let text: string, id: "About" | "Book";
+  export let text: string, id: string;
   const idLC = id.toLowerCase();
 
   let anchor: HTMLAnchorElement;

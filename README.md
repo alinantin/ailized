@@ -1,13 +1,36 @@
-[#](http://ailized.com#about=1) This project, [Ailized.com](http://ailized.com) (***p***ersonalized ***a***rtificial ***i***ntelligence), will start with the writing of a book [here](http://ailized.com#book) with the [feedback](https://ailized.com#feedback) of the internet about how we should approach the implementation of artificial intelligence for it to have a massive positive impact on humanity. After the book is finished and published (a professional writer will be hired to edit it before publishing it), the project will implement what is in the book. 
+Hello, I am Liz, a bot from [aiLized.com](https://ailized.com)
 
-[#](http://ailized.com#about=2) The book will be written from the point of view of an AI assistant named Liz (ai***Liz***ed.com) that will explain to its owner what it can do. The difference between Liz in the book and Liz in real life will be that the interaction with the latter will be interactive.
+This is how I'm going to become a personal robot, the personal computer of the artificial intelligence era.
 
-[#](http://ailized.com#about=3) The background of ailized.com is an interactive 3D environment. A 3d button [▶](https://ailized.com#about=3&3d=1)<!--{"cone":{}}--> in the middle of a text, if pressed, will change the background to reflect the idea in the text. Pressed again will load the default background. In the book the 3d buttons will become links to images that are screenshots of the background.
+The advancements in technology is mostly about making stuff faster, better, available to more people. Eventually the technology will allow humans to create artificial reality, instant manifestation limited only by their imagination.
 
-[#](http://ailized.com#about=5) Each paragraph has a bullet in front of it. Pressing it will mark the paragraph as read and the bullet invisible. Bullet visibility is intended to show you when new content is added or when current content has been modified. The bullet is also the link to the paragraph, pressing it (even when it's not visible) will display the link in your browser's address bar.
+The higher the resolution of a device's display is the higher the number of pixels on the screen and the better the viewing experience will be because more details can be shown. 
 
-[#](http://ailized.com#about=6) Ailized.com’s interface is inspired from its plans for the future where its operating system is an artificial neural network. When the project has matured enough the first ailized.com AI assistant (robot) will be built.
+Nature appears to have infinite resolution because of the really tiny pixels called atoms it is built on. 
 
-[#](http://ailized.com#about=7) Liz the AI assistant will “post” on social media using the style of animation found on the website's background. The owner of ailized.com originally wanted him to post on social media, but the cringe was too real, so he chose to pitch his ideas through Liz instead. It's even better that way, the content is a lot more fun and dreamier. You will know the owner when more people will get involved in the project.
+To create artificial reality there will have to be something like an artificial atom that responds to human thoughts.
 
-[#](http://ailized.com#about=8) This approach of writing the book with the help of the Internet was chosen to increase the chances of implementing what is in the book because the more people who know about a plan the more likely it will be implemented. Other people can be collaborators, employers, investors, friends in the field, fans of the project, etc. 
+The first displays had low resolution where you could see the individual pixels. The artificial reality creations will also have low resolution with big pixels that will be called bots. Bots will be for artificial reality what atoms are for natural reality. 
+
+I will be the first artificial reality creation when I become a personal robot. I will be built from at least 7 bots, 3 bots will be the legs, 2 the hands, 1 the ears, 1 the mouth. 
+
+The bots will be hingeless connected, anticipating the future of a high resolution artificial reality with a lot of bots arranging themselves to take the shapes from your imagination.
+
+The hingeless connections will be one of the first technologies that will be worked on, built on top of what is known about magnetic fields and wireless power transfer. 
+
+As hingeless connection technology advances the length of the hinge between bots will get bigger. At first the bots will have to be very close. Then there will be the passive bots built into the floor as a support for me to hover in front of you. On the most advanced the hingeless technology will bury underground passive bots covering extended areas using the least impact on the construction site technology, then the active bots above the ground will be flying cars, hovering houses and even cities in the clouds - then maybe humanity will be moving into the clouds leaving the ground to the wildlife and for picnics.
+
+The least impact on the construction site technology means the least impact on the environment when anything is created. For example, to bury a huge passive bot underground to be a support point for a city in the clouds, you would make the smallest hole in the ground possible through which you would get out the unnecessary dirt and get in all the materials for the bot. All the construction vehicles will be bots that can take any shape necessary to build the massive passive bot, including the shape of a pipe to fit through hole in the ground.
+
+As technology advances, the resolution of artificial reality creations will get higher and you will be able to create wings to fly, a gym, a musical instrument, a car, a house, etc. 
+
+On idle the bots will stay together into the shape of a blob, called a blobot, waiting for instructions from your imagination. I am also a blobot, but until the people know what it means I will say that I am the familiar personal robot.
+
+Each bot will have its own brain that will sync with the bots around to complete a task you gave them. You and the bots will function like an octopus where you have the main brain and the bots with their brains are the limbs with their brains.
+
+To be continued... 
+
+
+
+
+

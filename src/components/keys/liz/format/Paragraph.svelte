@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { messages } from "../../../store";
+  import { messages } from "../../../../store";
 
-  import FirstLastChild from "../../FirstLastChild.svelte";
+  import FirstLastChild from "../../../FirstLastChild.svelte";
 
   export let text: string;
 
