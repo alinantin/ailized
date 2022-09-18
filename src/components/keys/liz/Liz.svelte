@@ -29,7 +29,7 @@
 
   let view = true;
 
-  hash.live.subscribe((map) => (view = map.has(idLC)));
+  // hash.live.subscribe((map) => (view = map.has(idLC)));
 
   let text = "";
 
