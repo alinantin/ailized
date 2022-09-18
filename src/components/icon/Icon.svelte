@@ -28,6 +28,7 @@
   import InfoCircle from "./icons/InfoCircle.svelte";
   import InfoTriangle from "./icons/InfoTriangle.svelte";
   import Liz from "./icons/Liz.svelte";
+  import Coffee from "./icons/Coffee.svelte";
 
   export let name: string;
 </script>
@@ -71,6 +72,7 @@
       InfoCircle,
       InfoTriangle,
       Liz,
+      Coffee,
     }[name]}
   /></svg
 >

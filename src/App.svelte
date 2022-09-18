@@ -7,6 +7,7 @@
   import ArrangeKey from "./components/keys/Keys.svelte";
   import Links from "./components/keys/Links.svelte";
   import Liz from "./components/keys/liz/Liz.svelte";
+  import BuyMeACoffee from "./components/keys/BuyMeACoffee.svelte";
 </script>
 
 <Canvas />
@@ -16,4 +17,5 @@
 <DayNight />
 <ArrangeKey />
 <Links />
+<BuyMeACoffee />
 <Liz />
