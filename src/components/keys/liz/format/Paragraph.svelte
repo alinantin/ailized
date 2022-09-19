@@ -31,11 +31,11 @@
 {#each text.split(/\r?\n/) as text1, i}
   {#if text1.trim()}
     <div class="key" on:click={handleClick}>
-      {#if !i}<FirstLastChild id="pitch" is="first" />{/if}
+      <!-- {#if !i}<FirstLastChild id="pitch" is="first" />{/if} -->
       <span class="text">
         <slot text={text1} />
       </span>
-      {#if text.length === i + 1}<FirstLastChild id="pitch" is="last" />{/if}
+      <!-- {#if text.length === i + 1}<FirstLastChild id="pitch" is="last" />{/if} -->
     </div>
   {/if}
 {/each}

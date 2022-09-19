@@ -4,7 +4,7 @@
   import Listen from "./components/keys/Listen.svelte";
   import Speak from "./components/keys/Speak.svelte";
   import DayNight from "./components/keys/DayNight.svelte";
-  import ArrangeKey from "./components/keys/Keys.svelte";
+  import Keys from "./components/keys/Keys.svelte";
   import Links from "./components/keys/Links.svelte";
   import Liz from "./components/keys/liz/Liz.svelte";
   import BuyMeACoffee from "./components/keys/BuyMeACoffee.svelte";
@@ -15,7 +15,7 @@
 <!-- <Listen /> -->
 <!-- <Speak /> -->
 <DayNight />
-<ArrangeKey />
+<!-- <Keys /> -->
 <Links />
 <BuyMeACoffee />
 <Liz />
