@@ -20,8 +20,8 @@
       .finally(() => document.body.classList.remove("loading"));
   };
 
-  const id = "Liz";
-  const idLC = "liz";
+  const id = "Pitch";
+  const idLC = "pitch";
 
   const url =
     localStorage.url ||
@@ -63,7 +63,7 @@
   <div class="brake" />
 {/if}
 <div class="key">
-  <Head name={id}
+  <Head name={id} icon="Presentation"
     ><!-- <label
       ><input
         on:change={(event) => {
