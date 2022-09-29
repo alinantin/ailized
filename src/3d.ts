@@ -87,8 +87,8 @@ const animate = () => {
 
 const resize = () => {
 
-  renderer.setSize(document.body.clientWidth, document.body.clientHeight)
-  camera.aspect = document.body.clientWidth / document.body.clientHeight
+  renderer.setSize(window.innerWidth, window.innerHeight)
+  camera.aspect = window.innerWidth / window.innerHeight
 
   camera.updateProjectionMatrix()
 
