@@ -15,10 +15,11 @@ html {
 }
 
 body {
-  margin: 0;
-  font-family: 'Special Elite';
-  padding: .0525rem;
+  margin: 0 auto;
+  width: max-content;
   height: calc(100vh - .15rem);
+  padding: .0525rem;
+  font-family: 'Special Elite';
 
   &::after {
     content: "";
