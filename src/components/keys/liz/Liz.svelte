@@ -62,20 +62,9 @@
 {#if view}
   <div class="brake" />
 {/if}
-<div class="key">
-  <Head name={id} icon="Presentation"
-    ><!-- <label
-      ><input
-        on:change={(event) => {
-          if (event.currentTarget.checked) return hash.set([idLC]);
-          hash.delete(idLC);
-        }}
-        type="checkbox"
-        bind:checked={view}
-      /><span /><span>{id}</span></label
-    > -->{id}</Head
-  >
-</div>
+<!-- <div class="key">
+  <Head name={id} icon="Presentation">{id}</Head>
+</div> -->
 {#if view}
   <div class="brake" />
   <Paragraph {text} let:text={text1}>

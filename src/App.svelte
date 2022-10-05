@@ -16,6 +16,6 @@
 <!-- <Speak /> -->
 <DayNight />
 <!-- <Keys /> -->
-<Links />
-<BuyMeACoffee />
+<!-- <Links /> -->
+<!-- <BuyMeACoffee /> -->
 <Liz />
